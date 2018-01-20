@@ -20,15 +20,14 @@ function sum(a, b) {
 //Here is the test for sum(); uncomment it to run it
 sum(4, 7);
 
-
 function multiply(a, b) {
   var product = (a * b);
   var multArray = [];
-  sumArray.push([product],['The product of ' + a + ' and ' + b + ' = ' + product + '.']);
-  console.log ('The prodcut of ' + a + ' and ' + b + ' = ' + product + '.');
+  multArray.push([product],['The product of ' + a + ' and ' + b + ' is ' + product + '.']);
+  console.log ('The product of ' + a + ' and ' + b + ' is ' + product + '.');
   console.log (multArray);
 }
-  
+
 //Here is the test for sum(); uncomment it to run it
 multiply(5, 9);
 
@@ -41,9 +40,9 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) {
+//function multiply(a, b) {
   //eslint-disable-line
-}
+//}
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);

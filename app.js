@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
 
@@ -21,16 +21,7 @@ function sum(a, b) {
 sum(4, 7);
 
 
-function multiply(a, b) {
-  var product = (a * b);
-  var multArray = [];
-  sumArray.push([product],['The product of ' + a + ' and ' + b + ' = ' + product + '.']);
-  console.log ('The prodcut of ' + a + ' and ' + b + ' = ' + product + '.');
-  console.log (multArray);
-}
-  
-//Here is the test for sum(); uncomment it to run it
-multiply(5, 9);
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 

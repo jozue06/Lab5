@@ -30,8 +30,8 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) {
   var product = (a * b);
   var multArray = [product,'The product of ' + a + ' and ' + b + ' is ' + product + '.'];
-  console.log ('The product of ' + a + ' and ' + b + ' is ' + product + '.');
-  console.log (multArray);
+  //console.log ('The product of ' + a + ' and ' + b + ' is ' + product + '.');
+  // console.log (multArray);
   return multArray;
 }
 
@@ -46,12 +46,18 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here
+
+
+// Write your code
 function sumAndMultiply(a, b, c) {
-  //eslint-disable-line
-  var product = (a * b * c);
-  var sums = (a + b + c);
-  var sumMultArray = [sums, product, + a + ' and ' + b + ' and ' + c + ' sum to ' + sums + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + product + '.'];
+  var sumMulty = sum(a,b)[0];
+  var sumMulty2 = sum(sumMulty,c)[0];
+  var proMulty = multiply(a,b)[0];
+  var proMulty2 = multiply(proMulty,c)[0];
+  var sumMultArray = [sumMulty2, proMulty2, a + ' and '+ b + ' and ' + c + ' sum to ' + sumMulty2 +'.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + proMulty2 +'.'];
+  //console.log(sumMulty);
+  //console.log(sumMulty2);
+  //console.log(sumMultArray);
   return sumMultArray;
 }
 
